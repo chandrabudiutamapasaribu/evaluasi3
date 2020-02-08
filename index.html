@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>evaluasi3</title>
+    <link rel="short icon" href="c.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="kalkulator" >
+    <table name="table">
+        <tr>
+            <td >
+                <input type="text" id="inputoutput" disabled >
+            </td> 
+        </tr><br>
+            <td >
+                <input type="button" value="1" class="angka" onclick="kalkulator.inputoutput.value += '1'" >
+                <input type="button" value="2" class="angka" onclick="kalkulator.inputoutput.value += '2'" >
+                <input type="button" value="3" class="angka" onclick="kalkulator.inputoutput.value += '3'" >
+                <input type="button" value="+" class="op"     onclick="kalkulator.inputoutput.value += '+'" ><br>
+                <input type="button" value="4" class="angka" onclick="kalkulator.inputoutput.value += '4'" >
+                <input type="button" value="5" class="angka" onclick="kalkulator.inputoutput.value += '5'" >
+                <input type="button" value="6" class="angka" onclick="kalkulator.inputoutput.value += '6'" >
+                <input type="button" value="-" class="op" onclick="kalkulator.inputoutput.value += '-'" ><br>
+                <input type="button" value="7" class="angka" onclick="kalkulator.inputoutput.value += '7'" >
+                <input type="button" value="8" class="angka" onclick="kalkulator.inputoutput.value += '1'" >
+                <input type="button" value="9" class="angka" onclick="kalkulator.inputoutput.value += '9'" >
+                <input type="button" value="x" class="op" onclick="kalkulator.inputoutput.value += '*'" ><br>
+                <input type="button" value="C" class="op" id="clear" onclick="kalkulator.inputoutput.value = ''" >  
+                <input type="button" value="0" class="angka" onclick="kalkulator.inputoutput.value += '0'" >
+                <input type="button" value="=" class="op" onclick="kalkulator.inputoutput.value =eval(kalkulator.inputoutput.value)  " >
+                <input type="button" value="/" class="op" onclick="kalkulator.inputoutput.value += '/'" >
+                
+
+            </td>
+       
+    </table>
+</form>
+</body>
+</html>
